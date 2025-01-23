@@ -26,12 +26,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: Center(
-            child:
-                Text("Ticket Booking", style: TextStyle(color: Colors.white))),
-      ),
       body: appScreen[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Colors.blueGrey,
