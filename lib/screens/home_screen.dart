@@ -1,7 +1,9 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:ticket_app/base/Tickets.dart';
 import 'package:ticket_app/base/res/media.dart';
 import 'package:ticket_app/base/res/styles.dart';
+import 'package:ticket_app/base/widgets/section_header_link.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -62,6 +64,17 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                ),
+                SizedBox(height: 40),
+                SectionHeaderLink(
+                  headLine: "Upcoming Flights",
+                  linkText: "View All",
+                ),
+                Tickets(),
+                SizedBox(height: 40),
+                SectionHeaderLink(
+                  headLine: "Book Hotels",
+                  linkText: "View All",
                 )
               ],
             ),
